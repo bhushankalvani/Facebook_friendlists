@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="FBLogin">
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>FB Login</title>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+        <!-- FB Login Dialog -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12" ng-controller="DisplayController as dispCtrl">
+                    <fb-login ng-hide="dispCtrl.disp()"></fb-login>
+                    <!--<list-view ng-show="dispCtrl.disp()"></list-view>-->
+                </div>
+            </div>
+        </div>
+<script>
+    function samPle(){
+        window.location.href = "sample.html";
+    }
+</script>
+        <script src="http://connect.facebook.net/en_US/all.js"></script>
+        <script type="text/javascript">
+          
+        </script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <div id="fb-root"></div>
+    </body>
+</html>
