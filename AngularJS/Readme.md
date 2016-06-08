@@ -6,6 +6,7 @@ which is only uploaded for the basic knowledge and understanding of how the Java
 This application follows the MVC structure and thus I have put all the API calls in the "factory.js" file under "js/" directory.
 The API calls return data to the controller in the form of deferred promises or rejects.
 
-I've upoloaded the config.xml file along with the project because it provides permission only to facebook, to open intents to the inAppBrowser.
+I've upoloaded the config.xml file along with the project because it provides permission only to facebook via this access origin tag, 
+"<access origin="http://connect.facebook.net"/>" to open facebook intents in the inAppBrowser.
 
 The most important plugin "cordova-plugin-inappbrowser", allows us to open facebook authentication page from within our app, and also permissions for our application are all handled after login in the inAppBrowser.
