@@ -1,0 +1,47 @@
+<div class = "panel panel-primary" ng-hide = "fbCtrl.display()">
+	<div class = "panel-heading login-heading">
+		<div class="row">
+			<div class="col-xs-2">
+				<img class = "logo img img-responsive" src = "img/facebook.png"/>
+			</div>
+			<div class = "col-xs-10 login-header-text">
+				Facebook Login	
+			</div>
+		</div>
+	</div>
+	<div class = "panel-body" >
+		<div class="row">
+            <div class="col-xs-12 label-class" >
+                <label>Status: {{status}} <!--is connected ng variable goes here--></label>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-xs-12">
+				<center>
+					<button class = "btn btn-primary" ng-click = "fbCtrl.login()">Log In with Facebook</button>
+				</center>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Iterate through the friendlist array using ng-repeat and display in this panel-->
+<div class = "panel panel-info" ng-show = "fbCtrl.display()">
+	<div class = "panel-heading">
+		<div class="row">
+			<div class = "col-xs-8">
+				<div class="row">
+					<img class="col-xs-4 img img-responsive profile_pic" ng-src="{{img_source}}"/>
+					<div class="col-xs-8 username">{{username}}</div>
+				</div>
+			</div>
+			<div class = "col-xs-4 logout-btn-div">
+				<button class = "btn btn-primary" ng-click = "fbCtrl.logout()">Log Out</button>
+			</div>
+		</div>
+	</div>
+	<div class = "panel-body">
+		<div class="row friendlists" ng-repeat="listItem in frndlist">
+		<div class = "col-xs-12 friendlists">{{listItem}}</div>
+	</div>
+</div>

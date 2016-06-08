@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="facebookFriendList">
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        
+        <script type="text/javascript" src="js/module.js"></script>
+        <script type="text/javascript" src="js/factory.js"></script>
+        <script type="text/javascript" src="js/controllers.js"></script>
+
+        <title>Facebook Login</title>
+    </head>
+    <body>
+        <div class="container-fluid" ng-controller="facebookController as fbCtrl">
+            <div class="row">
+                <div class="col-xs-12">
+                    <facebook-panel></facebook-panel>
+                </div>
+            </div>
+        </div>
+
+         <script src="http://connect.facebook.net/en_US/sdk.js"></script> 
+        <script type="text/javascript" src="cordova.js"></script>
+
+    </body>
+</html>
